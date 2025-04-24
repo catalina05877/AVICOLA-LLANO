@@ -2,14 +2,14 @@
 import sys
 import io
 from flask import Flask, render_template, request, redirect, url_for, flash, send_file
-from avicola_llano_grande.controllers.stock_controller import registrar_huevos, obtener_stock
-from avicola_llano_grande.controllers.venta_controller import realizar_venta
+from controllers.stock_controller import registrar_huevos, obtener_stock
+from controllers.venta_controller import realizar_venta
 from db import stock_collection
 
 # Configurar la codificación predeterminada como UTF-8
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-app = Flask(__name__, template_folder='avicola_llano_grande/templates')
+app = Flask(__name__, template_folder='./templates')
 app.secret_key = 'clave_secreta_para_flask'  # Necesaria para usar mensajes flash
 
 # Prueba de conexión a la base de datos al iniciar la aplicación
