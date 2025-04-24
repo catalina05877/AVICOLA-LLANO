@@ -1,0 +1,18 @@
+AVÍCOLA LLANO GRANDE S.A.S
+Factura de venta
+Fecha: 2025-04-23_15-36-18
+Cliente: NATURAL
+Tipo de huevo: ROJO
+Tamaño: A
+Unidad: DOCENA
+Cantidad: 2 (24 huevos)
+Subtotal: $12000
+IVA: $0
+TOTAL: $12000
+    ,~.          .-------.
+   (o o)_       /         \
+ ,'  _  )`.    |           |
+/  /` `' \ \   |           |
+|  \  Y  /  |   \         /
+ \  `-'  /     `-------'
+  `.___,'
