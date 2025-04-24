@@ -1,4 +1,3 @@
-# app.py
 import sys
 import io
 from flask import Flask, render_template, request, redirect, url_for, flash, send_file
@@ -56,23 +55,10 @@ def ver_stock():
 def descargar_factura(nombre):
     try:
         # Asegúrate de que el archivo exista en la carpeta 'facturas'
-        return send_file(f"facturas/{nombre}", as_attachment=False)  # Cambia `as_attachment` a `False` para verlo en el navegador
+        return send_file(f"facturas/{nombre}", as_attachment=False)
     except FileNotFoundError:
         flash("El archivo solicitado no existe.")
         return redirect(url_for('venta'))
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-
-
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
